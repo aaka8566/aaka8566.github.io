@@ -5,7 +5,7 @@ import { projectsData } from "./Project"
 
 const Projects = () => {
   return (
-    <Box id="Projects" w={"90%"} m="auto" mt={"3%"}>
+    <Box id="projects" w={"90%"} m="auto" mt={"3%"}>
       <Heading
         textAlign={"center"}
         fontSize={{ base: "30px", md: "40px" }}
@@ -18,6 +18,7 @@ const Projects = () => {
         gap={{ base: "2rem", md: "4rem" }}>
         {projectsData.map((project, i) => (
           <ProjectCard
+          
             index={i}
             project_img={project.project_img}
             project_img_dark={project.project_img_dark}

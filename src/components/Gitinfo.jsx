@@ -12,6 +12,7 @@ const Gitinfo = () => {
             <Box margin={'2rem'}><Text fontWeight={'extrabold'} fontSize={'3xl'}>My Statistics</Text></Box>
         <Flex justifyContent={'space-around'} margin={'2rem'}>
         <img
+        id="github-top-langs"
               src={
                 colorMode === "dark"
                   ? "https://github-readme-stats.vercel.app/api?username=aaka8566&show_icons=true&locale=en&theme=tokyonight"
@@ -20,7 +21,7 @@ const Gitinfo = () => {
               alt="stats"
             />
             <img
-        
+        id="github-streak-stats"
               src={
                 colorMode === "dark"
                   ? "https://streak-stats.demolab.com/?user=aaka8566&theme=dark"
@@ -32,11 +33,12 @@ const Gitinfo = () => {
             </Box>
             <Box margin={'2.5rem'}>
             <Box><Text fontWeight={'extrabold'} fontSize={'3xl'} margin={'2rem'}>My Github Calendar</Text></Box>
-           <Box display={'grid'} justifyContent={'center'} border={'px solid pink'} width={'100%'}> <GitHubCalendar  username="aaka8566" /></Box>
+           <Box display={'grid'} justifyContent={'center'} border={'px solid pink'} width={'100%'}> <GitHubCalendar class="react-activity-calendar"   username="aaka8566" /></Box>
             </Box>
 <Box>
 <Box  margin={'2.5rem'}><Text fontSize={'3xl'} fontWeight={'extrabold'}>Github Contribution Graph</Text></Box>
          <Box border={'px solid brown'} margin={'auto'}  display={'grid'} justifyContent={'center'} w={'60%'} alignItems={'center'}>  <img
+         id="github-stats-card"
             width={'100%'}
               src="https://github-readme-activity-graph.cyclic.app/graph?username=aaka8566&theme=gotham"
               alt=""

@@ -41,14 +41,39 @@ export default function Nav() {
   // const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box w={'100%'} position={'fixed'} bg={useColorModeValue('gray.100', 'gray.900')} px={4} zIndex={'20'}>
+      <Box  id="nav-menu" w={'100%'} position={'fixed'} bg={useColorModeValue('gray.100', 'gray.900')} px={4} zIndex={'20'}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
       <Popover>
       <Flex gap={'5rem'} children={'Click'} role='button' >
-           {links.map((el)=>{
-            return el==="Resume"?
+           {/* {links.map((el)=>{ */}
+            {/* return el==="Resume"? */}
            
-            <a
+         
+
+
+<Link className="nav-link about" to="about" smooth={true}
+  duration={1000}
+  offset={-80}
+  ><Text transition= {'0.2s ease-out'} fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}}>About</Text></Link>
+
+<Link className="nav-link skills" to='skills' smooth={true}
+  duration={1000}
+  offset={-80}
+  ><Text transition= {'0.2s ease-out'} fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}}>Skills</Text></Link>
+
+<Link className="nav-link projects" to="projects" smooth={true}
+  duration={1000}
+  offset={-80}
+  ><Text transition= {'0.2s ease-out'} fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}}>Projects</Text></Link>
+
+<Link className="nav-link contact" to='contact' smooth={true}
+  duration={1000}
+  offset={-80}
+  ><Text transition= {'0.2s ease-out'} fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}}>Contact</Text></Link>
+
+<a
+      // className="nav-link resume"      
+      id="resume-button-1"
             className={styles.a}
   onClick={() => {
     window.open(
@@ -59,13 +84,17 @@ export default function Nav() {
   href={Resume}
   download="Aakash_Chakravarty_Resume"
   
-> <Text fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}}>{el}</Text></a>
-            :
-<Link to={el}smooth={true}
-  duration={1000}
-  offset={-80}
-  ><Text transition= {'0.2s ease-out'} fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}}>{el}</Text></Link>
-           })}
+> <Text fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}}>Resume</Text></a>
+
+
+
+
+
+
+
+
+
+
           </Flex>
       </Popover>
          

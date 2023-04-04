@@ -33,6 +33,7 @@ import {
   
     return (
       <Box
+      className="project-card"
         color={{ base: "black", dark: "white" }} // change text color based on color mode
         bg={{ base: "gray.50", dark: "gray.800" }} // change background color based on color mode
         borderRadius="md"
@@ -53,12 +54,12 @@ import {
         <Box
           padding="1rem"
           data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}>
-          <Heading size="md" marginBottom="0.5rem">
+          <Heading className="project-title" size="md" marginBottom="0.5rem">
             {/* <LightSpeed left>{title}</LightSpeed> */}
             {title}
           </Heading>
-          <Text marginBottom="1rem">{description}</Text>
-          <HStack marginBottom="1rem">
+          <Text className="project-description" marginBottom="1rem">{description}</Text>
+          <HStack marginBottom="1rem" className="project-tech-stack">
             {tech_stack.map((tech) => (
          
                 <Image
@@ -72,7 +73,7 @@ import {
           </HStack>
   
           <HStack spacing="1rem">
-            <a href={link} target="_blank" rel="noreferrer">
+            <a className="project-deployed-link" href={link} target="_blank" rel="noreferrer">
               <Button
                 variant={"outline"}
                 colorScheme="blue"
@@ -81,7 +82,7 @@ import {
                 Check it out!
               </Button>
             </a>
-            <a href={github} target="_blank" rel="noreferrer">
+            <a className="project-github-link" href={github} target="_blank" rel="noreferrer">
               <Button
                 variant={"outline"}
                 colorScheme="blue"

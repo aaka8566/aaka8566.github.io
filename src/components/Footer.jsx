@@ -3,12 +3,12 @@ import React from 'react'
 import {FaLocationArrow} from "react-icons/fa"
 import {BiPhoneCall} from "react-icons/bi"
 import {BsFillEnvelopeAtFill} from "react-icons/bs";
-
+// import styles from "../styles/Footer.css"
 import styles from "../styles/Footer.css"
 const Footer = () => {
   return (
     
-   <Box id='Contacts' w={'80%'} margin={'auto'} marginTop={'4rem'}>
+   <Box  id="contact" w={'80%'} margin={'auto'} marginTop={'4rem'}>
     <Text fontSize={'4xl'} color={'blue'}>---------Contact me---------</Text>
             <Flex margin={'4rem'} justifyContent={'space-between'}>
 <Stack border={'px solid blue'} w={'40%'} marginTop={'3rem'} gap={'3rem'}>
@@ -27,7 +27,7 @@ const Footer = () => {
 </Box>
 <Box textAlign={'left'}>
 <Text fontSize={'2xl'} fontWeight={'bold'}>Contact Me</Text>
-<Text>9973130197</Text>
+<Text  id="contact-phone">9973130197</Text>
 </Box>
 </Flex>
 <Flex   >
@@ -36,7 +36,7 @@ const Footer = () => {
 </Box>
 <Box textAlign={'left'}>
 <Text fontSize={'2xl'} fontWeight={'bold'}>Email</Text>
-<Text >aakash8566@gmail.com</Text>
+<Text id="contact-email">aakash8566@gmail.com</Text>
 </Box>
 </Flex>
 </Stack>
