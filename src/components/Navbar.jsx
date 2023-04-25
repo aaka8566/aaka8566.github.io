@@ -18,7 +18,7 @@ import {Link} from "react-scroll"
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 import Resume from "../Resume/Aakash_Chakravarty_Resume.pdf"
-import styles from "../styles/Navbar.module.css"
+//import styles from "../styles/Navbar.module.css"
 // const NavLink = ({ children }) => (
 //   <Link
 //     px={2}
@@ -44,13 +44,16 @@ export default function Nav() {
       <Box  id="nav-menu" w={'100%'} position={'fixed'} bg={useColorModeValue('gray.100', 'gray.900')} px={4} zIndex={'20'}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
       <Popover>
-      <Flex gap={'5rem'} children={'Click'} role='button' >
+      <Flex gap={'4rem'} children={'Click'} role='button' >
            {/* {links.map((el)=>{ */}
             {/* return el==="Resume"? */}
-           
+
+            
+            <Link className="nav-link home" to="home" smooth={true}
+  duration={1000}
+  offset={-80}
+  ><Text transition= {'0.2s ease-out'} fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}}>Home</Text></Link>
          
-
-
 <Link className="nav-link about" to="about" smooth={true}
   duration={1000}
   offset={-80}
@@ -72,9 +75,10 @@ export default function Nav() {
   ><Text transition= {'0.2s ease-out'} fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}}>Contact</Text></Link>
 
 <a
-      // className="nav-link resume"      
+       className="nav-link resume"      
       id="resume-button-1"
-            className={styles.a}
+            // className={styles.a}
+            onmouseover="this.style.color='red'"
   onClick={() => {
     window.open(
       "https://drive.google.com/file/d/1v1vYxYlg6Lntui-0pEKQ_slwJPizi9DO/view?usp=sharing",

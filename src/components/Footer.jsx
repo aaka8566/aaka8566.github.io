@@ -3,6 +3,8 @@ import React from 'react'
 import {FaLocationArrow} from "react-icons/fa"
 import {BiPhoneCall} from "react-icons/bi"
 import {BsFillEnvelopeAtFill} from "react-icons/bs";
+import {AiFillGithub} from "react-icons/ai";
+import {FaLinkedinIn} from "react-icons/fa"
 // import styles from "../styles/Footer.css"
 import styles from "../styles/Footer.css"
 const Footer = () => {
@@ -11,7 +13,7 @@ const Footer = () => {
    <Box  id="contact" w={'80%'} margin={'auto'} marginTop={'4rem'}>
     <Text fontSize={'4xl'} color={'blue'}>---------Contact me---------</Text>
             <Flex margin={'4rem'} justifyContent={'space-between'}>
-<Stack border={'px solid blue'} w={'40%'} marginTop={'3rem'} gap={'3rem'}>
+<Stack border={'px solid blue'} w={'40%'} marginTop={'2rem'} gap={'1.5rem'}>
 <Flex border={'px solid green'}  >
 <Box fontSize={'3rem'} w={'25%'} border={'px solid blue'}  >
 <FaLocationArrow  />
@@ -37,6 +39,42 @@ const Footer = () => {
 <Box textAlign={'left'}>
 <Text fontSize={'2xl'} fontWeight={'bold'}>Email</Text>
 <Text id="contact-email">aakash8566@gmail.com</Text>
+</Box>
+</Flex>
+
+<Flex >
+  <Box fontSize={'3rem'} w={'25%'} border={'px solid blue'}>
+  <a
+            href="https://github.com/aaka8566"
+            className={styles.buttons}
+            target="_blank"
+            rel="noreferrer"
+            id="contact-github"
+            >
+            <AiFillGithub />
+          </a>
+</Box>
+<Box textAlign={'left'}>
+<a  target="blank" href="https://github.com/aaka8566"><Text fontSize={'2xl'} fontWeight={'bold'}>Github/aaka8566</Text></a>
+{/* <Text  id="contact-phone">9973130197</Text> */}
+</Box>
+</Flex>
+
+<Flex >
+  <Box fontSize={'3rem'} w={'25%'} border={'px solid blue'}>
+  <a
+            href="https://www.linkedin.com/in/aakash-chakravarty-16b438141/"
+            className={styles.buttons}
+            target="_blank"
+            rel="noreferrer"
+            id="contact-linkedin"
+            >
+            <FaLinkedinIn />
+          </a>
+</Box>
+<Box textAlign={'left'}>
+<a target="blank" href="https://www.linkedin.com/in/aakash-chakravarty-16b438141/"><Text fontSize={'2xl'} fontWeight={'bold'}>LinkedIn/aaka8566</Text></a>
+{/* <Text  id="contact-phone">9973130197</Text> */}
 </Box>
 </Flex>
 </Stack>
