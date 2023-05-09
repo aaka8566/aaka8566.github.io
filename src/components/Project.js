@@ -37,41 +37,76 @@ export const projectsData = [
 //     }
 //    ,
     
-//     {
-//       project_img: "./pharmeasy.png",
-//       project_img_dark: "./pharmeasy_dark.png",
-//       title: "PharmEasy",
-//       description:
-//         "This was an individual project. PharmEasy online store from where users can buy medicines and take services like lab tests etc. In my role as an individual contributor, I utilized an extensive range of cutting-edge technologies to create a seamless user experience. This included the use of React, HTML, CSS, and Javascript for development, alongside Chakra  for UI design and development.",
-//       tech_stack: [
-//         {
-//           url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
-//           name: "react",
-//         },
-//         {
-//           url: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
-//           name: "html",
-//         },
-//         {
-//           url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
-//           name: "css",
-//         },
-//         {
-//           url: "https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg",
-//           name: "js",
-//         },
-//         {
-//           url: "https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png",
-//           name: "chakra",
-//         },
-//         {
-//           url: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
-//           name: "github",
-//         },
-//       ],
-//       link: "https://dispensable-underwear-8715.vercel.app/",
-//       github: "https://github.com/Rajendra3049/PharmEasy.com-Clone",
-//     },
+    {
+      project_img: "./Manyta.png",
+      project_img_dark: "./Manyta.png",
+      title: "Manyta",
+      description:
+        "This was a group project. The Tech stack which we used to create this website are Javascript, React, Redux, for 'Front-End' and Node js, MongoDB, Mongoose, JWT, Rest-API, Express js, Bcrypt, for 'Back-End' and also used Chakra for UI. My work was here to create Admin Page(with dynamic data and filtration functionality), and added functionalities such as adding product , editing and deleteing products as well as dispatching orders . This was a collaborative project built by a team of 3 members in 5 days.",
+      tech_stack: [
+        {
+          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+          name: "react",
+        },
+        {
+          url: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+          name: "html",
+        },
+        {
+          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
+          name: "css",
+        },
+        {
+          url: "https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg",
+          name: "js",
+        },
+        {
+          url: "https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png",
+          name: "chakra",
+        },
+        {
+          url: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+          name: "github",
+        },
+      ],
+      link: "https://effortless-pasca-3465fc.netlify.app/",
+      github: "https://github.com/Tathagat017/screeching-idea-7572",
+    },
+    {
+      project_img: "./Manyta.png",
+      project_img_dark: "./Manyta.png",
+      title: "Manyta",
+      description:
+        "This was a group project. The Tech stack which we used to create this website are Javascript, React, Redux, for 'Front-End' and Node js, MongoDB, Mongoose, JWT, Rest-API, Express js, Bcrypt, for 'Back-End' and also used Chakra for UI. My work was here to create Admin Page(with dynamic data and filtration functionality), and added functionalities such as adding product , editing and deleteing products as well as dispatching orders . This was a collaborative project built by a team of 3 members in 5 days.",
+      tech_stack: [
+        {
+          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+          name: "react",
+        },
+        {
+          url: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+          name: "html",
+        },
+        {
+          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
+          name: "css",
+        },
+        {
+          url: "https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg",
+          name: "js",
+        },
+        {
+          url: "https://images.opencollective.com/chakra-ui-pro/61bd1dd/logo/256.png",
+          name: "chakra",
+        },
+        {
+          url: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+          name: "github",
+        },
+      ],
+      link: "https://effortless-pasca-3465fc.netlify.app/",
+      github: "https://github.com/Tathagat017/screeching-idea-7572",
+    },
     {
       project_img: "./apple.png",
       project_img_dark: "./apple_dark.png",
@@ -126,5 +161,6 @@ export const projectsData = [
       link: "https://subtle-brioche-5c1ad1.netlify.app/",
       github: "https://github.com/aaka8566/InternTheory",
     },
+  
   ];
   

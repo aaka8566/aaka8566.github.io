@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Text } from '@chakra-ui/react';
 import {AiFillGithub} from "react-icons/ai";
 import {FaLinkedinIn} from "react-icons/fa"
 import Resume from "../Resume/Aakash_Chakravarty_Resume.pdf"
@@ -30,7 +30,7 @@ A highly motivated Front Developer with extensive knowledge of HTML,CSS,JavaScri
 </Box>
     </Flex>
     <Flex alignItems={'center'} justifyContent={'center'} gap={'5rem'} paddingBottom={'1rem'} >
-    <a
+    <Button
     id="resume-button-2"
             onClick={() => {
               window.open(
@@ -38,7 +38,7 @@ A highly motivated Front Developer with extensive knowledge of HTML,CSS,JavaScri
                 "blank"
               );
             }}
-            href={Resume}
+           
             download="Aakash_Chakravarty_Resume"
             className={styles.buttons}
          >
@@ -46,8 +46,8 @@ A highly motivated Front Developer with extensive knowledge of HTML,CSS,JavaScri
             <span></span>
             <span></span>
             <span></span>
-            Resume
-          </a>
+        <a  href={Resume} id="resume-link-2" target="_blank" rel='noreferrer' download="Aakash_Chakravarty_Resume.pdf">    Resume</a>
+          </Button>
           <a
             href="https://github.com/aaka8566"
             className={styles.buttons}

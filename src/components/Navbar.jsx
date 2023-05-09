@@ -74,7 +74,7 @@ export default function Nav() {
   offset={-80}
   ><Text transition= {'0.2s ease-out'} fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}}>Contact</Text></Link>
 
-<a
+<Button
        className="nav-link resume"      
       id="resume-button-1"
             // className={styles.a}
@@ -85,11 +85,11 @@ export default function Nav() {
       "blank"
     );
   }}
-  href={Resume}
+  
   download="Aakash_Chakravarty_Resume"
   
-> <Text fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}}>Resume</Text></a>
-
+> <a  id="resume-link-1" href={Resume} target="_blank" rel='noreferrer' download="Aakash_Chakravarty_Resume.pdf">Resume</a></Button>
+{/* fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}} */}
 
 
 
