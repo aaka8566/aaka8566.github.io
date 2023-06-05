@@ -1,6 +1,6 @@
 import React from 'react'
 import {  useColorMode } from '@chakra-ui/color-mode'
-import { Box, Flex,  Text } from '@chakra-ui/react';
+import { Box, Flex,  Stack,  Text } from '@chakra-ui/react';
 import GitHubCalendar from 'react-github-calendar';
 
 
@@ -10,7 +10,7 @@ const Gitinfo = () => {
     <Box  border={'px solid green'} margin={'auto'} w={'90%'}>
         <Box margin={'auto'} w={'100%'} border={'px solid grey'}>
             <Box margin={'2rem'}><Text fontWeight={'extrabold'} fontSize={'3xl'}>My Statistics</Text></Box>
-        <Flex justifyContent={'space-around'} margin={'2rem'}>
+        <Stack direction={["column","column","row"]} justifyContent={'space-around'} margin={'2rem'}>
         <img
        id="github-stats-card"
               src={
@@ -29,7 +29,7 @@ const Gitinfo = () => {
               }
               alt="contribution"
             />
-            </Flex>
+            </Stack>
             </Box>
             <Box margin={'2.5rem'}>
             <Box><Text fontWeight={'extrabold'} fontSize={'3xl'} margin={'2rem'}>My Github Calendar</Text></Box>

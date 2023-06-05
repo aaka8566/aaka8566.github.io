@@ -1,19 +1,19 @@
 import React from 'react'
-import { Box, Button, Flex, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Text,Stack, Image } from '@chakra-ui/react';
 import {AiFillGithub} from "react-icons/ai";
 import {FaLinkedinIn} from "react-icons/fa"
 import Resume from "../Resume/Aakash_Chakravarty_Resume.pdf"
 import styles from "../styles/Introdiv.module.css";
 const Introdiv = () => {
   return (
-    <Box id="about"  className="about section" bgColor={'rgb(38,104,170)'}  paddingTop={'4rem'}>
-      <Text textAlign={'center'} marginBottom={'-3rem'} className={styles.white} fontSize={'4xl'}>About</Text>
-    <Flex border={'px solid grey'}>
-<Box className={styles.image} width={'100%'} border={'px solid green'}>
-    <img margin={'10rem'} className="home-img" src={'/profile.jpg'} width={'80%'} alt="memo" />
+    <Box id="about" border={'px solid red'} w={["100%","100%","100%"]}  className="about section" bgColor={'rgb(38,104,170)'}  paddingTop={'4rem'}>
+      <Text textAlign={'center'} marginBottom={'-1rem'} className={styles.white} fontSize={'4xl'}>About</Text>
+    <Stack  direction={['column', 'column','row']} flex={'row'} border={'px solid grey'}>
+<Box className={styles.image} width={'100%'}  border={'px solid green'}>
+    <Image className="home-img" src={'/nprofile.jpg'} h={["80%","80%",'350px']}  width={["80%","80%","400px"]} alt="memo" />
 </Box>
-<Box className={styles.text} border={'px solid blue'}>
-<Text textAlign={'left'} className={styles.white} fontSize={'5xl'}>Hi</Text>
+<Box  padding={["1.5rem","1.5rem",null]} className={styles.text} border={'px solid blue'}>
+<Text pt={'3rem'} textAlign={'left'} className={styles.white} fontSize={'5xl'}>Hi</Text>
 <Text id="user-detail-name" textAlign={'left'} className={styles.white} fontSize={'5xl'}>I'm Aakash Chakravarty</Text>
 <div className={styles.flipBox}><div className={styles.flip} >
   <div><div>Quick learner</div></div>
@@ -24,13 +24,16 @@ const Introdiv = () => {
   <div><div>Problem Solver </div></div>
 </div>
 </div>
-<Text id="user-detail-intro" noOfLines={[1, 2, 3,4]} marginTop={'1rem'} textAlign={'left'} className={styles.white} fontSize={'1xl'}>
+<Box h={["100%","100%","100%"]}>
+<Text id="user-detail-intro"  marginTop={'1rem'} textAlign={'left'} className={styles.white} fontSize={'1xl'}>
 A highly motivated Front Developer with extensive knowledge of HTML,CSS,JavaScript, React js,and Next js. Experienced in developing, testing, and deploying frontend applications. Highly organized and detail-oriented, with the ability to quickly understand complex requirements and work in a fast paced environment. Dedicated to providing excellent customer service and meeting project deadlines.
 </Text>
 </Box>
-    </Flex>
-    <Flex alignItems={'center'} justifyContent={'center'} gap={'5rem'} paddingBottom={'1rem'} >
-    <Button
+</Box>
+    </Stack>
+    <Flex  alignItems={'center'} justifyContent={'center'} gap={'5rem'} paddingBottom={'1rem'} >
+    <Button 
+  
     id="resume-button-2"
             onClick={() => {
               window.open(
@@ -46,7 +49,7 @@ A highly motivated Front Developer with extensive knowledge of HTML,CSS,JavaScri
             <span></span>
             <span></span>
             <span></span>
-        <a  href={Resume} id="resume-link-2" target="_blank" rel='noreferrer' download="Aakash_Chakravarty_Resume.pdf">    Resume</a>
+        <a  href={Resume} id="resume-link-2" target="_blank" rel='noreferrer' download="Aakash_Chakravarty_Resume.pdf"><Text   paddingBottom={'0.7rem'}>Resume</Text></a>
           </Button>
           <a
             href="https://github.com/aaka8566"

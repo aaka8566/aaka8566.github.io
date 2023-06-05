@@ -11,9 +11,9 @@ const Footer = () => {
   return (
     
    <Box  id="contact" w={'80%'} margin={'auto'} marginTop={'4rem'}>
-    <Text fontSize={'4xl'} color={'blue'}>---------Contact me---------</Text>
-            <Flex margin={'4rem'} justifyContent={'space-between'}>
-<Stack border={'px solid blue'} w={'40%'} marginTop={'2rem'} gap={'1.5rem'}>
+    <Text fontSize={["2xl","2xl","4xl"]} color={'blue'}>---------Contact me---------</Text>
+            <Stack direction={["column","column","row"]} margin={'4rem'} justifyContent={'space-between'}>
+<Stack border={'px solid blue'} w={["100%","100%","40%"]} marginTop={'2rem'} gap={'1.5rem'}>
 <Flex border={'px solid green'}  >
 <Box fontSize={'3rem'} w={'25%'} border={'px solid blue'}  >
 <FaLocationArrow  />
@@ -79,7 +79,7 @@ const Footer = () => {
 </Flex>
 </Stack>
 
-<Box w={'50%'} border={'px solid pink'}>
+<Box w={["100%","100%","50%"]} border={'px solid pink'}>
 <form
                     action="https://getform.io/f/31411231-8e73-46d8-bb3c-d9d6a6eaf5a2"
                     method="POST">
@@ -103,7 +103,7 @@ const Footer = () => {
                     <Button type="submit"  formTarget="_blank" colorScheme='blue' w={'90%'} borderRadius={'3rem'}>Send Message</Button>
                   </form>
 </Box>
-            </Flex>
+            </Stack>
         </Box>
      
     )

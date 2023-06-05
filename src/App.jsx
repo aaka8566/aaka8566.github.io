@@ -1,4 +1,5 @@
 
+import React from 'react';
 import './App.css';
 import Home from './components/Home';
 // import Footer from './components/Footer';
@@ -9,6 +10,9 @@ import Home from './components/Home';
 // import Techskills from './components/Techskills';
 
 function App() {
+  React.useEffect(() => {
+    document.title = 'Aakash Chakravarty Portfolio';
+    }, []);
   return (
     <div className="App">
     <Home/>

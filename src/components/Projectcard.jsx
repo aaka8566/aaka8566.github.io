@@ -47,7 +47,7 @@ import {
           marginBottom="1rem"
           // data-aos="fade-down-right"
           // src={project_img}
-          src={colorMode === "dark" ? project_img_dark : project_img}
+          src={colorMode === "dark" ? project_img : project_img}
           alt={title}
           w="100%"
         />
@@ -60,9 +60,10 @@ import {
           </Heading>
           <Text className="project-description" marginBottom="1rem">{description}</Text>
           <HStack marginBottom="1rem" className="project-tech-stack">
-            {tech_stack.map((tech) => (
+            {tech_stack.map((tech,i) => (
          
                 <Image
+                key={i+2}
                   h={{ base: "24px", md: "32px" }}
                   w={{ base: "24px", md: "32px" }}
                   src={tech.url}
