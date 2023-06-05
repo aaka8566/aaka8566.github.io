@@ -14,36 +14,36 @@ const Footer = () => {
     <Text fontSize={["2xl","2xl","4xl"]} color={'blue'}>---------Contact me---------</Text>
             <Stack direction={["column","column","row"]} margin={'4rem'} justifyContent={'space-between'}>
 <Stack border={'px solid blue'} w={["100%","100%","40%"]} marginTop={'2rem'} gap={'1.5rem'}>
-<Flex border={'px solid green'}  >
-<Box fontSize={'3rem'} w={'25%'} border={'px solid blue'}  >
+<Flex border={'px solid green'} gap={["1.5rem","1.5rem","0.5rem"]} >
+<Box fontSize={["2rem","2rem","3rem"]} w={'25%'} border={'px solid blue'}  >
 <FaLocationArrow  />
 </Box>
 <Box textAlign={'left'}>
-<Text fontSize={'2xl'} fontWeight={'bold'}>Address</Text>
+<Text  fontSize={["xl","2xl","2xl"]} fontWeight={'bold'}>Address</Text>
 <Text>Patna,Bihar-800024</Text>
 </Box>
 </Flex>
-<Flex >
-  <Box fontSize={'3rem'} w={'25%'} border={'px solid blue'}>
+<Flex gap={["1.5rem","1.5rem","0.5rem"]}>
+  <Box fontSize={["2rem","2rem","3rem"]} w={'25%'} border={'px solid blue'}>
 <BiPhoneCall/>
 </Box>
 <Box textAlign={'left'}>
-<Text fontSize={'2xl'} fontWeight={'bold'}>Contact Me</Text>
+<Text fontSize={["xl","2xl","2xl"]} fontWeight={'bold'}>Contact Me</Text>
 <Text  id="contact-phone">9973130197</Text>
 </Box>
 </Flex>
-<Flex   >
-  <Box fontSize={'3rem'} w={'25%'} border={'px solid blue'}>
+<Flex   gap={["1.5rem","1.5rem","0.5rem"]}>
+  <Box fontSize={["2rem","2rem","3rem"]} w={'25%'} border={'px solid blue'}>
 <BsFillEnvelopeAtFill/>
 </Box>
 <Box textAlign={'left'}>
-<Text fontSize={'2xl'} fontWeight={'bold'}>Email</Text>
+<Text fontSize={["xl","2xl","2xl"]} fontWeight={'bold'}>Email</Text>
 <Text id="contact-email">aakash8566@gmail.com</Text>
 </Box>
 </Flex>
 
-<Flex >
-  <Box fontSize={'3rem'} w={'25%'} border={'px solid blue'}>
+<Flex gap={["1.5rem","1.5rem","0.5rem"]}>
+  <Box fontSize={["2rem","2rem","3rem"]} w={'25%'} border={'px solid blue'}>
   <a
             href="https://github.com/aaka8566"
             className={styles.buttons}
@@ -55,13 +55,13 @@ const Footer = () => {
           </a>
 </Box>
 <Box textAlign={'left'}>
-<a  target="blank" href="https://github.com/aaka8566"><Text fontSize={'2xl'} fontWeight={'bold'}>Github/aaka8566</Text></a>
+<a  target="blank" href="https://github.com/aaka8566"><Text fontSize={["xl","2xl","2xl"]} fontWeight={'bold'}>Github/aaka8566</Text></a>
 {/* <Text  id="contact-phone">9973130197</Text> */}
 </Box>
 </Flex>
 
-<Flex >
-  <Box fontSize={'3rem'} w={'25%'} border={'px solid blue'}>
+<Flex gap={["1.5rem","1.5rem","0.5rem"]}>
+  <Box fontSize={["2rem","2rem","3rem"]} w={'25%'} border={'px solid blue'}>
   <a
             href="https://www.linkedin.com/in/aakash-chakravarty-16b438141/"
             className={styles.buttons}
@@ -73,7 +73,7 @@ const Footer = () => {
           </a>
 </Box>
 <Box textAlign={'left'}>
-<a target="blank" href="https://www.linkedin.com/in/aakash-chakravarty-16b438141/"><Text fontSize={'2xl'} fontWeight={'bold'}>LinkedIn/aaka8566</Text></a>
+<a target="blank" href="https://www.linkedin.com/in/aakash-chakravarty-16b438141/"><Text fontSize={["xl","2xl","2xl"]} fontWeight={'bold'}>LinkedIn/aaka8566</Text></a>
 {/* <Text  id="contact-phone">9973130197</Text> */}
 </Box>
 </Flex>
