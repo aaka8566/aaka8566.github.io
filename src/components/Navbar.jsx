@@ -18,7 +18,7 @@ import {
 import {Link} from "react-scroll"
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
-import Resume from "../Resume/Aakash_Chakravarty_Resume.pdf"
+import Resume from "../Resume/Aakash-Chakravarty-Resume.pdf"
 import React from 'react';
 import {
   FiHome,
@@ -102,9 +102,9 @@ export default function Nav() {
     );
   }}
   
-  download="Aakash_Chakravarty_Resume"
+  download="Aakash-Chakravarty-Resume"
   
-> <a  id="resume-link-1" href={Resume} target="_blank" rel='noreferrer' download="Aakash_Chakravarty_Resume.pdf">Resume</a></Button>
+> <a  id="resume-link-1" href={Resume} target="_blank" rel='noreferrer' download="Aakash-Chakravarty-Resume.pdf">Resume</a></Button>
 {/* fontSize={'1.5rem'} _hover={{color:'brown',fontWeight:'bold'}} */}
 
 
@@ -233,9 +233,9 @@ export default function Nav() {
     );
   }}
   
-  download="Aakash_Chakravarty_Resume"
+  download="Aakash-Chakravarty-Resume"
   
-> <a  id="resume-link-1" href={Resume} target="_blank" rel='noreferrer' download="Aakash_Chakravarty_Resume.pdf">Resume</a></Button>
+> <a  id="resume-link-1" href={Resume} target="_blank" rel='noreferrer' download="Aakash-Chakravarty-Resume.pdf">Resume</a></Button>
             </Flex>
           </VStack>
           </DrawerBody>

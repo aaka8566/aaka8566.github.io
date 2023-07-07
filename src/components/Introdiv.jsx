@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Button, Flex, Text,Stack, Image } from '@chakra-ui/react';
 import {AiFillGithub} from "react-icons/ai";
 import {FaLinkedinIn} from "react-icons/fa"
-import Resume from "../Resume/Aakash_Chakravarty_Resume.pdf"
+import Resume from "../Resume/Aakash-Chakravarty-Resume.pdf"
 import styles from "../styles/Introdiv.module.css";
 const Introdiv = () => {
   return (
@@ -42,14 +42,14 @@ A highly motivated Front Developer with extensive knowledge of HTML,CSS,JavaScri
               );
             }}
            
-            download="Aakash_Chakravarty_Resume"
+            download="Aakash-Chakravarty-Resume"
             className={styles.buttons}
          >
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-        <a  href={Resume} id="resume-link-2" target="_blank" rel='noreferrer' download="Aakash_Chakravarty_Resume.pdf"><Text   paddingBottom={'0.7rem'}>Resume</Text></a>
+        <a  href={Resume} id="resume-link-2" target="_blank" rel='noreferrer' download="Aakash-Chakravarty-Resume.pdf"><Text   paddingBottom={'0.7rem'}>Resume</Text></a>
           </Button>
           <a
             href="https://github.com/aaka8566"
