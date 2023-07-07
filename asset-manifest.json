@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.25930586.css",
-    "main.js": "/static/js/main.caa7dec8.js",
+    "main.css": "/static/css/main.03ac6fd8.css",
+    "main.js": "/static/js/main.acb55612.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/Aakash_Chakravarty_Resume.pdf": "/static/media/Aakash_Chakravarty_Resume.c667abb3291cc58d26dd.pdf",
+    "static/media/Aakash-Chakravarty-Resume.pdf": "/static/media/Aakash-Chakravarty-Resume.c667abb3291cc58d26dd.pdf",
     "index.html": "/index.html",
-    "main.25930586.css.map": "/static/css/main.25930586.css.map",
-    "main.caa7dec8.js.map": "/static/js/main.caa7dec8.js.map",
+    "main.03ac6fd8.css.map": "/static/css/main.03ac6fd8.css.map",
+    "main.acb55612.js.map": "/static/js/main.acb55612.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25930586.css",
-    "static/js/main.caa7dec8.js"
+    "static/css/main.03ac6fd8.css",
+    "static/js/main.acb55612.js"
   ]
 }
